@@ -1,4 +1,5 @@
 import { Text, View } from 'react-native'
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function Index() {
   return (
@@ -12,6 +13,14 @@ export default function Index() {
       }}
     >
       <Text>Hello world, from One</Text>
+
+      <LinearGradient
+        colors={['#4c669f', '#3b5998', '#192f6a']}
+        style={{
+          height: 100,
+          width: 100
+        }}
+      />
     </View>
   )
 }

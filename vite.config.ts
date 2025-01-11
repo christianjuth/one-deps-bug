@@ -7,6 +7,12 @@ export default defineConfig({
       web: {
         defaultRenderMode: 'ssg',
       },
+
+      deps: {
+        "expo-linear-gradient": {
+          "**/*.js": ["jsx"],
+        },
+      }
     }),
   ],
 })
